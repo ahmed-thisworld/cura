@@ -181,8 +181,9 @@ section#about {
 }
 
 section#hero, section#slide-show {
-    padding: 0;
+    padding: 0 0.5rem;
 }
+ 
 section#hero p:first-child {
     margin: 0;
 }
@@ -337,9 +338,7 @@ section#book-appointment label a {
 #services .row {
     gap: 2rem;
 }
-.slideshow-container.container {
-    padding: 0 0.5rem;
-}
+ 
 .service-card .img {
     width: 150px;
     height: 150px;
