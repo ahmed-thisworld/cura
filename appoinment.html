@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <link rel="shortcut icon" href="images/Picture2.svg" type="image/x-icon">
+   
+    <title>Document</title>
+</head>
+
+<body>
+    <aside>
+        <button class="back-to-top">top</button>
+    </aside>
+    <header>
+        <div class="container flex">
+            <div class="box">
+                <div class="logo">
+                    <img src="images/clinic logo 1.svg" alt="">
+                </div>
+                <div class="btn" id="btn-collapse-expand">clickme</div>
+            </div>
+            <ul class="links flex">
+                <li class="link">
+                    <a href="#">home</a>
+                </li>
+                <li class="link">
+                    <a href="#">about us</a>
+                </li>
+                <li class="link">
+                    <a href="#">skin services</a>
+                </li>
+                <li class="link">
+                    <a href="#">hair services</a>
+                </li>
+                <li class="link">
+                    <a href="#">blog</a>
+                </li>
+                <li class="link">
+                    <a href="#">contact us</a>
+                </li>
+            </ul>
+            <a href="/appoinment.html" class="btn cta">Book an appointment</a>
+        </div>
+    </header>
+    <main>
+        <section id="book-appointment">
+            <div class="section-header">
+                 <h2>Book and appointment</h2>
+                 <p>
+                    please fill the form below to share your contact details and expedite your consultation process.
+                 </p>
+            </div>
+            <div class="container">
+               <div class="row col-2">
+                    <div class="col myimage"></div>
+                    <div class="col">
+                        <form class="appointment" action="/thank-you.html">
+                            <div class="input-group">
+                                <label for="">I'm interested in...</label>
+                                <select name="service" id="service" required>
+                                    <optgroup label="Select a service">
+                                        <option value="hair-removal">hair removal</option>
+                                        <option value="hair-removal">hair removal</option>
+                                        <option value="hair-removal">hair removal</option>
+                                        <option value="hair-removal">hair removal</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label for="name">About You</label>
+                                <input type="text" placeholder="full name" required name="name">
+                            </div>
+                            <div class="input-group">
+                                <label for="phone">Contact</label>
+                                <input type="number" minlength="10" placeholder="Enter your phone number" required name="mobile">
+                            </div>
+                            <div class="input-group">
+                                <input type="checkbox" id="tandc" checked required>
+                                <label for="tandc">I agree to the <a href="/terms-and-conditions.html">terms & conditinos</a> </label>
+                            </div>
+                            <div class="input-group">
+                                <button type="submit">Get appointment</button>
+                            </div>
+                        </form>
+                    </div>
+               </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container row col-1-2-2 footer-top res">
+            <div class="col">
+                <h3 class="title">contact us</h3>
+                <div class="content">
+                    <address>No.403/1, Plot, Flat No.301, 3rd Floor In Park View Edifice Above Blue Tokai Coffee Shop,
+                        Survey No.2, Road No. 1, Nandagiri Hills, Jubilee Hills, Hyderabad</address>
+                    <ul>
+                        <li>
+                            <a href="#">info@ancetacare.com</a>
+                        </li>
+                        <li>
+                            <a href="#">799 799 0414</a>
+                        </li>
+                        <li>
+                            <a href="#">View Our Location On Google Map</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <h3 class="title">Skin & Hair Services</h3>
+                <div class="content">
+                    <ul>
+                        <li>
+                            <a href="#">Pimple Treatment</a>
+                        </li>
+                        <li>
+                            <a href="#">Acne Scar Treatment</a>
+                        </li>
+                        <li>
+                            <a href="#">Chemical Peel Treatment</a>
+                        </li>
+                        <li>
+                            <a href="#">Skin Whitening Treatment</a>
+                        </li>
+                        <li>
+                            <a href="#">Under Eye Dark Circle Treatment</a>
+                        </li>
+                        <li>
+                            <a href="#">Laser Hair Removal Treatment</a>
+                        </li>
+                        <li>
+                            <a href="#">Moles Removal Treatment</a>
+                        </li>
+                        <li>
+                            <a href="#">Pigmentation Treatment</a>
+                        </li>
+                        <li>
+                            <a href="#">Hair Loss Treatment</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <h3 class="title">Quick Links</h3>
+                <div class="content">
+                    <ul>
+                        <li>
+                            <a href="#"> About Us</a>
+                        </li>
+                        <li>
+                            <a href="#"> Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#"> Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#"> Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#"> Site Map</a>
+                        </li>
+                        <li>
+                            <a href="#"> Client Reviews</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="container row col-2 footer-bottom">
+            <div class="col logo"><img src="images/clinic logo 1.svg" alt=""></div>
+            <div class="col copyright">
+                © 2022 Anceita Clinic. All Rights Reserved. |  Developed by <a href="mailto:faizan.thisworld.gmail.com">Faizan Ahmed</a>
+            </div>
+        </div>
+    
+       
+    </footer>
+ 
+</body>
+
+</html>
