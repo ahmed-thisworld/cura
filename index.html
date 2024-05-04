@@ -8,25 +8,28 @@
 
     <link rel="shortcut icon" href="./images/Picture2.svg" type="image/x-icon">
     <script src="./script/script.js" defer></script>
+    <script src="./script/slideshow.js" defer></script>
     <title>Document</title>
 </head>
 
 <body>
     <aside>
-
-        <button class="back-to-top">
+        <a href="#" class="back-to-top">
             <div class="circle"></div>
-        </button>
+        </a>
     </aside>
     <header>
         <div class="container flex">
             <div class="box">
-                <div class="logo">
-                    <img src="./images/clinic logo 1.svg" alt="">
+                <a href="./index.html">
+                      <div class="logo">
+                    <!-- <img src="./images/clinic logo 1.svg" alt=""> -->
                 </div>
-                <div class="btn" id="btn-collapse-expand">clickme</div>
+                </a>
+              
+                <div class="btn" id="btn-collapse-expand">&equiv;</div>
             </div>
-            <ul class="links flex">
+            <ul class="links flex hide">
                 <li class="link">
                     <a href="#">home</a>
                 </li>
@@ -45,17 +48,84 @@
                 <li class="link">
                     <a href="#">contact us</a>
                 </li>
+                <li class="cta">
+
+                    <a href="/appoinment.html" class="btn">Book an appointment</a>
+                </li>
             </ul>
-            <a href="./appoinment.html" class="btn cta">Book an appointment</a>
         </div>
     </header>
     <main>
         <section id="slide-show">
+            <div class="slideshow-container container">
 
+                <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                    <div class="slide-img"></div>
+                <div class="text">Caption Text</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                    <div class="slide-img"></div>
+                <div class="text">Caption Two</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                    <div class="slide-img"></div>
+                <div class="text">Caption Three</div>
+                </div>
+        
+                <a class="prev" onclick="plusSlides(-1, document.querySelector('#slide-show'))">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, document.querySelector('#slide-show'))">&#10095;</a>
+            </div>
+   
+            
+       
+            <div class="slide-nav">
+                <span class="dot" onclick="currentSlide(1, document.querySelector('#slide-show'))"></span>
+                <span class="dot" onclick="currentSlide(2,document.querySelector('#slide-show'))"></span>
+                <span class="dot" onclick="currentSlide(3,document.querySelector('#slide-show'))"></span>
+            </div>
         </section>
         <section id="hero">
             <div class="container row col-2">
-                <div class="col slideshow"></div>
+                <div class="col">
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                            <div class="slide-img"></div>
+                        <div class="text">Caption Text</div>
+                        </div>
+                    
+                        <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                            <div class="slide-img"></div>
+                        <div class="text">Caption Two</div>
+                        </div>
+                    
+                        <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                            <div class="slide-img"></div>
+                        <div class="text">Caption Three</div>
+                        </div>
+                
+                        <a class="prev" onclick="plusSlides(-1,document.querySelector('#hero .col'))">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1,document.querySelector('#hero .col'))">&#10095;</a>
+                    </div>
+                    <div class="slide-nav">
+                        <span class="dot" onclick="currentSlide(1,document.querySelector('#hero .col'))"></span>
+                        <span class="dot" onclick="currentSlide(2,document.querySelector('#hero .col'))"></span>
+                        <span class="dot" onclick="currentSlide(3,document.querySelector('#hero .col'))"></span>
+                    </div>
+                </div>
+            
+         
+                
+           
+          
                 <div class="col about-product">
                     <p>About this webiste</p>
                     <h2>Best Dermatolgist In hyderabd</h2>
@@ -102,6 +172,7 @@
                 </div>
             </div>
         </section>
+        
         <section id="services">
             <div class="section-header">
                 <h2>Our skin & hair services</h2>
@@ -115,7 +186,7 @@
             <div class="container row col-4">
                 <div class="col service-card">
                     <div class="img">
-                        <img src="./images/clinic logo 1.svg" alt="">
+                        <!-- <img src="./images/clinic logo 1.svg" alt=""> -->
                     </div>
                     <div class="details">
                         <p>
@@ -125,7 +196,7 @@
                 </div>
                 <div class="col service-card">
                     <div class="img">
-                        <img src="./images/clinic logo 1.svg" alt="">
+                        <!-- <img src="./images/clinic logo 1.svg" alt=""> -->
                     </div>
                     <div class="details">
                         <p>
@@ -135,7 +206,7 @@
                 </div>
                 <div class="col service-card">
                     <div class="img">
-                        <img src="./images/clinic logo 1.svg" alt="">
+                        <!-- <img src="./images/clinic logo 1.svg" alt=""> -->
                     </div>
                     <div class="details">
                         <p>
@@ -145,7 +216,7 @@
                 </div>
                 <div class="col service-card">
                     <div class="img">
-                        <img src="./images/clinic logo 1.svg" alt="">
+                        <!-- <img src="./images/clinic logo 1.svg" alt=""> -->
                     </div>
                     <div class="details">
                         <p>
@@ -155,7 +226,7 @@
                 </div>
                 <div class="col service-card">
                     <div class="img">
-                        <img src="./images/clinic logo 1.svg" alt="">
+                        <!-- <img src="./images/clinic logo 1.svg" alt=""> -->
                     </div>
                     <div class="details">
                         <p>
@@ -165,7 +236,7 @@
                 </div>
                 <div class="col service-card">
                     <div class="img">
-                        <img src="images/clinic logo 1.svg" alt="">
+                        <!-- <img src="./images/clinic logo 1.svg" alt=""> -->
                     </div>
                     <div class="details">
                         <p>
@@ -175,7 +246,7 @@
                 </div>
                 <div class="col service-card">
                     <div class="img">
-                        <img src="./images/clinic logo 1.svg" alt="">
+                        <!-- <img src="./images/clinic logo 1.svg" alt=""> -->
                     </div>
                     <div class="details">
                         <p>
@@ -185,7 +256,7 @@
                 </div>
                 <div class="col service-card">
                     <div class="img">
-                        <img src="./images/clinic logo 1.svg" alt="">
+                        <!-- <img src="./images/clinic logo 1.svg" alt=""> -->
                     </div>
                     <div class="details">
                         <p>
@@ -200,23 +271,23 @@
                 <h2>Why Choose us for skin & Har Treatment in Hyderabad</h2>
                 <h3>What makes cura as the best skin & har clinic in Hyderabad</h3>
                 <dl>
-                    <li>
+                    <li class="ethical-standards">
                         <dt>High ethical standards</dt>
                         <dd>Description </dd>
                     </li>
-                    <li>
+                    <li class="result-oriented-solutions">
                         <dt>Result-oriented solutions</dt>
                         <dd>Description </dd>
                     </li>
-                    <li>
+                    <li class="advanced-tech">
                         <dt>Advanced technology</dt>
                         <dd>Description </dd>
                     </li>
-                    <li>
+                    <li class="scientific-results">
                         <dt>genuine, scientific results</dt>
                         <dd>Description </dd>
                     </li>
-                    <li>
+                    <li class="accessible">
                         <dt>Accessible & Affordable</dt>
                         <dd>Description </dd>
                     </li>
@@ -230,7 +301,7 @@
                     <h3>Subscribe to our newsletter</h3>
                 </div>
                 <div class="col">
-                    <form class="input-group" method="get">
+                    <form class="input-group" action="./thank-you.html">
                         <input type="email" placeholder="Enter you email" required>
                         <button>Subscribe</button>
                     </form>
