@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
     
-    <link rel="shortcut icon" href="images/Picture2.svg" type="image/x-icon">
-   
-    <title>Document</title>
-</head>
+        <link rel="shortcut icon" href="images/Picture2.svg" type="image/x-icon">
+        <script src="./script/script.js" defer></script>
+        <script src="./script/slideshow.js" defer></script>
+        <title>Document</title>
+    </head>
 
 <body>
     <aside>
-        <button class="back-to-top">top</button>
+        <a href="#" class="back-to-top">
+            <div class="circle"></div>
+        </a>
     </aside>
     <header>
         <div class="container flex">
             <div class="box">
-                <div class="logo">
-                    <img src="images/clinic logo 1.svg" alt="">
+                <a href="./index.html">
+                      <div class="logo">
+                    <!-- <img src="images/clinic logo 1.svg" alt=""> -->
                 </div>
-                <div class="btn" id="btn-collapse-expand">clickme</div>
+                </a>
+              
+                <div class="btn" id="btn-collapse-expand">&equiv;</div>
             </div>
-            <ul class="links flex">
+            <ul class="links flex hide">
                 <li class="link">
                     <a href="#">home</a>
                 </li>
@@ -42,8 +47,11 @@
                 <li class="link">
                     <a href="#">contact us</a>
                 </li>
+                <li class="cta">
+
+                    <a href="/appoinment.html" class="btn">Book an appointment</a>
+                </li>
             </ul>
-            <a href="/appoinment.html" class="btn cta">Book an appointment</a>
         </div>
     </header>
     <main>
@@ -175,11 +183,12 @@
         <div class="container row col-2 footer-bottom">
             <div class="col logo"><img src="images/clinic logo 1.svg" alt=""></div>
             <div class="col copyright">
-                © 2022 Anceita Clinic. All Rights Reserved. |  Developed by <a href="mailto:faizan.thisworld.gmail.com">Faizan Ahmed</a>
+                © 2022 Anceita Clinic. All Rights Reserved. | Developed by <a
+                    href="mailto:faizan.thisworld.gmail.com">Faizan Ahmed</a>
             </div>
         </div>
-    
-       
+
+
     </footer>
  
 </body>
