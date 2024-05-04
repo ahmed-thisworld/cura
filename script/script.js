@@ -1,7 +1,7 @@
 const collapseExpandBtn = document.querySelector("#btn-collapse-expand")
-
+const header = document.querySelector("header .links")
 collapseExpandBtn.addEventListener("click", () => {
-    
+    header.classList.toggle("hide")
 })
 document.addEventListener("DOMContentLoaded", () => {
     const circle= document.querySelector(".back-to-top .circle")
