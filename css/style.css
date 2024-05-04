@@ -443,7 +443,9 @@ footer .col-1-2-2.res {
     border-radius: 0 3px 3px 0;
     user-select: none;
   }
-  
+  .links li:first-child {
+    margin-top: 10px;
+}
   /* Position the "next button" to the right */
   .next {
     right: 0;
@@ -534,6 +536,7 @@ footer .col-1-2-2.res {
     .links {
         display: block;
     }
+
     section#why-choose-us dd {
         margin: 10px 0 0 40px ;
     }
@@ -547,5 +550,8 @@ footer .col-1-2-2.res {
 @media (min-width : 640px) {
     .col-2.footer-bottom {
         grid-template-columns: repeat(2,1fr);
+    }
+    .links li:first-child {
+        margin-top: 0;
     }
 }
