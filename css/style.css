@@ -1,0 +1,357 @@
+:root {
+  
+    --p-font-family :  sans-serif;
+    --s-font-family : ;
+    --p-color: #0d1d32;
+    --color-2: #d8d5d2;
+    --color-3: #91806e;
+    --color-4: #3a2f28;
+    --color-5: #806f5f;
+    --color-6: #f2f2f2;
+    --color-7: #171620;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--p-font-family);
+    transition: 0.5s ease-in-out;
+  
+}
+img {
+    width: 100%;
+}
+.hide {
+    display: none;
+}
+.div-1 {
+    background-color: var(--p-color);
+}
+.div-2 {
+    background-color: var(--color-2);
+}
+.divs {
+    display: none;
+    grid-template-columns: repeat(3,1fr);
+}
+.div {
+    height: 20px;
+    width: 100%;
+}
+.div-3 {
+    background-color: var(--color-3);
+}
+.div-4 {
+    background-color: var(--color-4);
+}
+.div-5 {
+    background-color: var(--color-5);
+}
+.div-6 {
+    background-color: var(--color-6);
+}
+.div-7 {
+    background-color: var(--color-7);
+}
+.logo {
+    display: none;
+    max-width: 200px;
+}
+section#why-choose-us {
+    color: white;
+    background-color: var(--p-color);
+}
+header .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-bottom {
+    align-items: center;
+}
+header .cta {
+    display: block;
+    width: fit-content;
+}
+header .links {
+    margin: 1rem 0;
+}
+header li {
+    margin: 1rem 0 0;
+}
+ 
+li {
+    margin: 0 0 0 20px;
+    list-style: none;
+}
+li a {
+    text-transform: capitalize;
+}
+a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+h3.title {
+    text-transform: capitalize;
+}
+.row {
+    display: grid;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+.col-1-2-2.res {
+    grid-template-columns: 1fr;
+}
+
+.btn {
+    background-color: var(--p-color);
+    color: var(--color-2);
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+}
+.btn:hover {
+    opacity: 0.9;
+}
+section#newsletter {
+    background-color: var(--color-2);
+}
+section#about {
+    background-color: var(--p-color);
+    color: white;
+}
+ 
+section#about p, section#hero p {
+    margin: 2rem 0  0;
+}
+section#newsletter  p {
+    margin: 0;
+}
+.container, .section-header {
+    max-width: 1200px;
+    margin: auto;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    padding: 0.5rem;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.back-to-top .circle {
+    position: absolute;
+    left: 5%;
+    top: 4%;
+ 
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background-color: red;
+    /* transform-origin: center; */
+    transform: rotate(-90deg)   ;
+}
+section#why-choose-us h3 {
+    margin : 2rem 0;
+}
+section#why-choose-us dd {
+    margin: 10px 40px 0;
+    background-color: white;
+    color: black;
+    height: 0;
+    padding: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+section#why-choose-us li {
+    transition: all 0.5s ease-in-out;
+    list-style: circle;
+    margin: 2rem 20px;
+}
+section#why-choose-us li:hover  {
+  
+}
+section#why-choose-us li:hover  dd{
+    transition: all 0.5s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+    padding: 2rem;
+}
+section#why-choose-us dt { 
+    display: inline-block;
+    cursor: pointer;
+    list-style: circle;
+   
+}
+.back-to-top .circle::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 10px;
+    background-color: white;
+}
+p {
+    margin: 0.5rem 0 0;
+}
+button {
+    cursor: pointer;
+}
+form.input-group {
+    border: 2px solid var(--p-color);
+    display: flex;
+}
+input:not(input[type='checkbox']) , select{
+    padding: 0.5rem;
+    width: 100%;
+    color: var(--p-color);
+} 
+.input-group {
+    margin: 1rem 0;
+}
+form.input-group input {
+    border: none;
+    outline: none;
+    color: var(--p-color);
+}
+ button {
+    border: none;
+    padding: 0.5rem 2rem;
+    background-color: var(--color-7);
+    color: white;
+    text-transform: capitalize;
+    border-left: 2px solid var(--p-color);
+}
+form.input-group button {
+    border-left: 2px solid var(--p-color);
+}
+input[type='number'] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+section, footer{
+    padding: 2rem 0.5rem;
+}
+section#services {
+    text-align: center;
+}
+section#services .section-header {
+    padding: 0 0 2rem;
+    width: 60%;
+}
+section#book-appointment .section-header{
+    text-align: center;
+    margin-bottom:2rem;
+}
+section#thank-you .img {
+    max-width: 200px;
+    margin: auto;
+}
+section#thank-you {
+    text-align: center;
+}
+h2 {
+    text-transform: capitalize;
+}
+section#book-appointment label a {
+    color: var(--p-color);
+    text-decoration: underline;
+}
+
+.service-card  {
+    text-align: center;
+}
+#services .row {
+    gap: 2rem;
+}
+.service-card .img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 50%;
+}
+.back-to-top {
+
+}
+header {
+    padding: 2rem 1rem;
+}
+footer li {
+    margin-top: 0.5rem;
+    list-style: disc;
+}
+footer .content {
+    margin: 1rem 0 0;
+}
+footer{
+    color: white;
+    background-color: var(--p-color);
+}
+footer a {
+    color: var(--color-2);
+}
+footer .container {
+    padding: 2rem 0;
+}
+footer .col-1-2-2.res {
+    gap: 2rem 0;
+}
+.col-2.footer-bottom {
+    text-align: center;
+    grid-template-columns: repeat(1,1fr);
+}
+.row.col-2 {
+    grid-template-columns: repeat(1,1fr);
+}
+.col-4 {
+    grid-template-columns: repeat(2,1fr);
+}
+@media (min-width : 800px) {
+    .back-to-top {
+        bottom: 50px;
+        right: 50px;
+    }
+    .col-1-2-2.res {
+        grid-template-columns: 1fr 2fr 2fr;
+    }
+    .row.col-2 {
+        grid-template-columns: repeat(2,1fr);
+    }
+    footer .col-1-2-2.res {
+        gap: 1rem;
+    }
+    .col-4 {
+        grid-template-columns: repeat(4,1fr);
+    }
+    #btn-collapse-expand {
+        display: none;
+    }
+    header .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header li {
+        margin: 0 1rem 0 0;
+    }
+}
+@media (min-width : 640px) {
+    .col-2.footer-bottom {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
